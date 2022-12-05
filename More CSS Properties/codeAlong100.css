@@ -1,0 +1,36 @@
+img {
+    width: 29%;
+    height: 45vh;
+    /* object-fit: cover;
+    object-position: initial; */
+    margin: calc(10%/6);
+    /* margin: calc(10%/6); */
+    border: 0.4em gray solid;
+    transition: 0.5s;
+}
+
+nav {
+    text-transform: uppercase;
+    border-bottom: 2px #f1f1f1 solid;
+    width: 28%;
+    margin-left: calc(10%/6);
+    padding: 1.2em 0;
+    font-family: Raleway, sans-serif;
+    font-size: ;
+}
+
+
+
+img:hover {
+    cursor: pointer;
+    border: 0.4em yellowgreen solid;
+}
+
+img:active {
+    transform: translateY(0.3em);
+}
+
+/* body {
+    margin: 0 auto;
+    text-align: center;
+} */

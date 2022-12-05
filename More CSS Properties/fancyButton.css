@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #ffd6ff;
+}
+
+button {
+    background: none;
+    color: #f72585;
+    padding: 1.5em 2em;
+    font-size: 1em;
+    border: 3px solid;
+    font-weight: bold;
+    transition: color 2s, border-color 0.5s, box-shadow 0.5s, transform 0.5s, background-color 3s;
+}
+
+button:hover {
+    border-color: #55a630;
+    background-color: #fff3b0;
+    color: #5e60ce;
+    box-shadow: 0 0.5em 0.5em -0.2em #55a630;
+    transform: translateY(-0.4em);
+    cursor: pointer;
+}
+
+/* Ova e uste eden nacin na koj moze koga kliknuvame da go dobieme efektot na pritiskanje na kopceto */
+button:active {
+    transform: translateY(0.2em);
+    background-color: #7fdeff;
+    color: #7b1e7a;
+    border-color: #6c584c;
+}

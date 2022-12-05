@@ -1,0 +1,43 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #ffd166;
+    border: 2px solid black;
+    margin: 10px;
+    display: inline-block;
+}
+
+#middle {
+    background-color: #06d6a0;
+    border: 2px solid black☺;
+}
+
+
+#static #middle {
+    position: static;
+}
+
+#relative #middle {
+    position: relative;
+    top: 3em;
+    right: 5em;
+}
+
+/* When the section with id absolute is positioned (the position is set to any value exce[t static)
+the div inside that is set to absolute changes the positioning and now it takes the position 
+with regards of it parent in this case the section element with id=absolute. */
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top: 2px;
+    left: 65px;
+}
+
+#fixed #middle {
+    position: fixed;
+    top: 50px;
+    left: 500px;
+}
