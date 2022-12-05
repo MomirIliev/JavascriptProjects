@@ -1,0 +1,130 @@
+/* * {
+    background-color: aquamarine;           Selects and applies the color to everything in the document
+} */
+
+/* button {
+    font-size: 20px;                        Selects applies the size to all the buttons in the document
+} */
+
+/* h1, h2, p {
+    color: yellowgreen;                     Selects multiple elements in a document and applies the same atribute to all of them
+} */
+
+body {
+    background-color: #ffd166;
+}
+
+/*Selects the element with the id = signup in the html document.  */
+#signup {
+    background-color: #ef476f;
+    color: #ffc43d;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+/* Makes the color of the button to change when we hover it with the pointer. */
+button:hover {
+    background-color: #ff99c8;
+}
+
+/* Makes the button react as pushed donw when clicked on. */
+button:active {
+    transform: scale(0.9, 0.9);
+    background-color: #e4c1f9;
+}
+
+/* Selects all span elements in the document */
+span {
+    color: #f25c54;
+}
+
+
+/* Selects elements that have the class atribute in the html document with the value set as tag.*/
+.tag {
+    color: #9d4edd;
+    background-color: #b2f7ef;
+}
+
+/*Selects all a (anchor) elements that are nested or descended in/from elements that contain the class = post atribute.   */
+.post a {
+    color: #f25c54;
+}
+
+footer a {
+    color: #5465ff;
+}
+
+/* We can add the class atribute in multiple elements at once. To do that we press the alt button and select with the mouse the multiple elements we want to upgrade. */
+
+/* This is used to select all the button elements that are preceded with an h2 element.  */
+h2+button {
+    background-color: #e9ff70;
+}
+
+/* This selector is used when we want to select all the elements that are direct descendents of the first element. In this case we will select all the a elements that
+are direct descendents/children of the footer element*/
+footer>a {
+    color: #353831;
+}
+
+/* This selector is used when we want to select only the section elements that contain the post element. Maybe other elements also contain the post atribute but with this 
+type of selector they will not be selected.  */
+section.post {
+    background-color: #fcf6bd;
+}
+
+/* This selector is used when we want to select a every input element which is of type password.   */
+input[type="password"] {
+    color: #bd1f36;
+}
+
+/* This selector is used when we want to select an href element (anchor tag) which contains the value google.  */
+a[href*="google"] {
+    color: #df2bd0;
+}
+
+.post button:hover {
+    background-color: #20fc8f;
+}
+
+.post button:active {
+    background-color: #e4c1f9;
+}
+
+/* Pseudo Classes are keyword added to selectors are used when we want to select a particular state 
+of the selected element. In this example we select the state when the button is hovered with the mouse and we set to change its color.  */
+a:hover {
+    color: #f3722c;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #c2d8b9;
+}
+
+/* Pseudo elements are keywords that are added to selectors when we want to select and style a particular part of the selected element.  */
+h2::first-letter {
+    color: #f72585;
+}
+
+#paragraph::first-line {
+    color: #ef476f;
+}
+
+p::selection {
+    background-color: #8338ec;
+    color: #ffc300;
+}
+
+/* The before and after pseudo elements are used if we want to add some content before or after the selected element, in this case elements which contain 
+the atribute class=post. Most often this is used to insert some cosmetic/visual content.  */
+.post::after {
+    content: "This is an inserted text after every elements with a class atribute post";
+}
+
+.post::before {
+    content: "This is inserted text before every element with a class atribute post";
+}
