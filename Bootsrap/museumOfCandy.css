@@ -1,0 +1,70 @@
+body {
+    background-color: #f5cac3;
+    font-family: 'Ubuntu', cursive;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #ea1c2c;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: white;
+    font-weight: 100;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ea1c2c;
+}
+
+#expandableButton {
+    background-color: #e56b6f;
+    border: 2px solid #ea1c2c;
+}
+
+#firstParagraph h1 {
+    color: white;
+    font-weight: 100;
+    font-size: 3rem;
+}
+
+#firstParagraph span {
+    color: #ea1c2c;
+}
+
+@media (max-width: 1200px) {
+    #firstParagraph h1 {
+        font-size: 2rem;
+    }
+}
+
+.infoText h2 {
+    color: #ea1c2c;
+    font-weight: 100;
+    font-size: 2.0rem;
+}
+
+.infoText p {
+    color: #e56b6f;
+    font-weight: 100;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.mainClass {
+    margin-bottom: 50px;
+}
+
+.navbar .scrolled {
+    background: rgb(133, 36, 133);
+}
